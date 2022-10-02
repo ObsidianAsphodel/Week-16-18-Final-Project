@@ -1,4 +1,46 @@
 body {
+    margin: 0;
     background-color: black;
     font-size: xx-large;
 }
+* {
+    box-sizing: border-box;
+}
+.nav{
+    background: rgb(30,8,87);
+    background: linear-gradient(180deg, rgba(30,8,87,1) 0%, rgba(7,45,115,1) 52%, rgba(0,212,255,1) 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.site-title{
+    font-size: 3rem;
+}
+.nav li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 200;
+}
+.nav li:hover{
+    opacity: 50%;
+}
+.nav li.active{
+    background-color: #555;
+}
+.img {
+    align-items: center;
+    max-width: 25%;
+    height: 25%;
+    padding: .5rem;
+    margin: 3.25rem;
+  }
